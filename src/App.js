@@ -14,6 +14,7 @@ class App extends React.Component {
     description: undefined,
     error: undefined,
   }
+  
   getWeather = async (e) => {
     e.preventDefault();
     const city = e.target.elements.city.value
@@ -27,7 +28,7 @@ class App extends React.Component {
       country: data.sys.country,
       humidity: data.main.humidity,
       description: data.weather[0].description,
-      error: undefined
+      error: ""
     })
   }
   render() {
