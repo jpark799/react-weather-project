@@ -24,6 +24,7 @@ class App extends React.Component {
     this.setState({
       temperature: data.main.temp,
       city: data.name,
+      humidity: data.main.humidity,
       
     })
   }
